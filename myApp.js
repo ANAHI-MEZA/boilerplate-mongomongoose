@@ -1,4 +1,16 @@
 require('dotenv').config();
+const mongoose = require("mongoose")
+
+
+const myID="mongodb+srv://ANAHI-MEZA:Bams.1462@atlascluster.bichmxi.mongodb.net/"
+
+
+
+
+mongoose.connect(myID, { useNewUrlParser: true, useUnifiedTopology: true 
+}).then((data)=>{
+  console.log("connected")
+})
 
 
 let Person;
